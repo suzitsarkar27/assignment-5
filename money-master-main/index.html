@@ -18,8 +18,8 @@
        <section class="container">
         <div class="row">
             <div class="col-md-6">
-              <div class="card">
-               <img src="/money-master-main/img/mmm.jpg" alt="">
+              <div class="card h-75">
+               <img src="/money-master-main/img/mmm.jpg " alt="">
               </div>
             </div>
             <div class="col-md-6 mt-2 ">
@@ -28,34 +28,37 @@
 
                 <div class="pt-4">
                   <h2>Incom</h2>
-                  Incom:  <input type="text"><br><br>
+                  Incom:  <input id="incom-money" type="text"><br><br>
                           <h3>Expenses</h3><br>
-                  Food:  <input type="text"><br><br>
-                  Rent:  <input type="text"><br><br>
-                Clothes: <input type="text"><br><br>
+                  Food:  <input id="food-money" type="text"><br><br>
+                  Rent:  <input id="rent-money" type="text"><br><br>
+                Clothes: <input id="clothes-money" type="text"><br><br>
         </div>
         <div>
-                <button class="frist-button">Calculate</button>
-                <h3>Total Expenses:5000</h3>
-                <h3>Balance:4500</h3>
+                <button id="cal-button" onclick="getMoney()" class="frist-button">Calculate</button>
+                <h3>Total Expenses :<span id="total-balance">00</span></h3>
+                <h3>Balance: <span id="total-money">00</span></h3>
         </div>
         <div>
 
           
-       <span>Save:</span>  <input type="text">  <span>%</span>  
-       <input class="secend-button" type="button"value='save'><br><br>
-         <h4>Saving Amount:2000</h4>
-         <h4>Remaining Balance:2500</h4>
+       <span>Save:</span>  <input id="input-button" type="text">  <span >%</span>  
+       <input onclick="reminignBlance()" class="secend-button" type="button"value='save'><br><br>
+         <h4>Saving Amount: <span id="saving-blance">000</span> </h4>
+         <h4>Remaining Balance: <span id="remaning-blance">00</span> </h4>
         </div>
-      </div>
+       </div>
       </div>
     </div>
-             </div>
+
+    
+ </div>
+ 
           </section>
       </main>            
             
      
 
- 
+ <script src="money.js"></script>
 </body>
-</html> -->
+</html> 

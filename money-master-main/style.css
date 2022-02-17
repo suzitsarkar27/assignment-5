@@ -11,3 +11,7 @@
 .card-design {
   background-color: #00cec9;
 }
+
+.notify-section {
+  display: none;
+}
