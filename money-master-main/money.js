@@ -44,12 +44,21 @@ function getMoney() {
 function reminignBlance() {
   const incomeInput = document.getElementById('incom-money');
   const incomeMoney = parseFloat(incomeInput.value);
-  incomeInput.value = incomeMoney;
+  // incomeInput.value = incomeMoney;
 
-  const inputButton = document.getElementById('input-button');
-  inputButton.value = incomeMoney / 20;
+  const inputButton = document.getElementById('input-filds');
+  inputButton.value;
 
   const savingBlance = document.getElementById('saving-blance');
-  savingBlance.innerText
+  savingBlance.innerText = incomeMoney / 100 *30;
+
+
+  // remaining balance 
+  const totalBalance = document.getElementById('total-money');
+  totalBalance.innerText;
   
+  const reminignBlance = document.getElementById('remaning-blance');
+  reminignBlance.innerText =parseFloat( totalBalance.innerText )- parseFloat(savingBlance.innerText);
+
+ 
 }
