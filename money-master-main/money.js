@@ -25,8 +25,9 @@ function getMoney() {
 
     
   if (isNaN(foodMoney)) {
-  alert('plesse type valide number')
-        
+  alert('plesse type valide number')      
+  } else if ( foodMoney < 0 ||  rentMoney < 0 ||clothesMoney < 0) {
+    alert('this is nagative value pless trye agin')
   }
   
   else {
@@ -34,12 +35,9 @@ function getMoney() {
     const totalExpenses = document.getElementById('total-balance');
     totalExpenses.innerText =  + foodMoney + rentMoney + clothesMoney;
 
-   const totalBalance = document.getElementById('total-money');
+    const totalBalance = document.getElementById('total-money');
     totalBalance.innerText = incomeInput.value - totalExpenses.innerText; 
-    
-
-  
-  }
+  } 
   
 } 
 
@@ -49,7 +47,7 @@ function reminignBlance() {
   // incomeInput.value = incomeMoney;
 
   const inputButton = document.getElementById('input-filds');
-  inputButton.value = inputButton.value ;
+  inputButton.value ;
 
   const savingBlance = document.getElementById('saving-blance');
   savingBlance.innerText = incomeMoney / 100;
@@ -60,9 +58,22 @@ function reminignBlance() {
   // remaining balance 
   const totalBalance = document.getElementById('total-money');
   totalBalance.innerText;
+
+
+
   
-  const reminignBlance = document.getElementById('remaning-blance');
-  reminignBlance.innerText =parseFloat( totalBalance.innerText )- parseFloat(savingBlance.innerText);
+  if (isNaN(inputButton.value)) {
+    alert( 'Do not string  Plesse type number')
+  } else if ( totalBalance.innerText < savingBlance.innerText) {
+    alert( 'Plesse this is not carect try to agine')
+  } else {
+    const reminignBlance = document.getElementById('remaning-blance');
+    reminignBlance.innerText = parseFloat(totalBalance.innerText) - parseFloat(savingBlance.innerText);
+  }
 
  
+  
+ 
+  
+
 }
