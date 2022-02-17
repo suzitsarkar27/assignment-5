@@ -27,7 +27,9 @@ function getMoney() {
   if (isNaN(foodMoney)) {
   alert('plesse type valide number')
         
-  } else {
+  }
+  
+  else {
 
     const totalExpenses = document.getElementById('total-balance');
     totalExpenses.innerText =  + foodMoney + rentMoney + clothesMoney;
@@ -47,10 +49,12 @@ function reminignBlance() {
   // incomeInput.value = incomeMoney;
 
   const inputButton = document.getElementById('input-filds');
-  inputButton.value;
+  inputButton.value = inputButton.value ;
 
   const savingBlance = document.getElementById('saving-blance');
-  savingBlance.innerText = incomeMoney / 100 *30;
+  savingBlance.innerText = incomeMoney / 100;
+  savingBlance.innerText = savingBlance.innerText *  inputButton.value;
+ 
 
 
   // remaining balance 
